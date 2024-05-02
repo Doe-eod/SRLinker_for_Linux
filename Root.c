@@ -1497,9 +1497,9 @@ void startShell() {
     if (shellCommand[0] == 'q') {
         handleInteractions();
     } else if (shellCommand[0] == '1') {
-        sprintf(shellCommandFull, "adb shell", shellCommand);
+        sprintf(shellCommandFull, "adb shell");
 
-        printf(ANSI_LIGHT_STEEL_BLUE "\n  => Shell wird gestartet... \n"ANSI_RESET, shellCommand);
+        printf(ANSI_LIGHT_STEEL_BLUE "\n  => Shell wird gestartet... \n"ANSI_RESET);
         printf(ANSI_MEDIUM_SEA_GREEN "");
         FILE* adbOutput;
         char outputLine[MAX_LINE_LENGTH];
